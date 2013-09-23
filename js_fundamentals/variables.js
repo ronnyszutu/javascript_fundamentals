@@ -85,6 +85,17 @@ var restOfLifeTotal = (maxAge - currentAge) * 2;
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Calculate the area based on the radius, and output "The area is NN".
 
+var radius = 5;
+//>>undefined
+var circumference = 2 * 3.14 * radius;
+//>>undefined
+"The circumference is " + circumference;
+//>>"The circumference is 31.400000000000002"
+var area = 3.14 * radius * radius;
+//>>undefined
+"The area is " + area;
+//>>"The area is 78.5"
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
