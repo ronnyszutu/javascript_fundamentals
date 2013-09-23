@@ -41,6 +41,21 @@ fortune;
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
 
+var currentYear = 2013;
+//>>undefined
+currentYear;
+//>>2013
+var birthYear = 1985;
+//>>undefined
+birthYear;
+//>>1985
+currentYear - birthYear;
+//>>28
+currentYear - birthYear - 1;
+//>>27
+"They are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1);
+//>>"They are either 28 or 27"
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
