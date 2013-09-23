@@ -7,6 +7,31 @@
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
+var numOfChildren = 3;
+//>> undefined
+numOfChildren;
+//>> 3
+var partnersName = "Jessica Alba";
+//>> undefined
+partnersName;
+//>> "Jessica Alba"
+var geographicLocation = "Toronto";
+//>> undefined
+geographicLocation;
+//>> "Toronto"
+var jobTitle = "programmer";
+//>> undefined
+jobTitle;
+//>> "programmer"
+var fortune = "You will be a " + jobTitle + ", and married to " + partnersName;
+//>> undefined
+fortune += " with " + numOfChildren + "kids."
+//>> "You will be a programmer, and married to Jessica Alba with 3kids."
+fortune = "You will be a " + jobTitle + ", and married to " + partnersName + " with " + numOfChildren + " kids.";
+//>> "You will be a programmer, and married to Jessica Alba with 3 kids."
+fortune;
+//>> "You will be a programmer, and married to Jessica Alba with 3 kids."
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old someone is? Calculate it!
