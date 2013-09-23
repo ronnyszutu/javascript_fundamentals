@@ -28,6 +28,12 @@ tellFortune(6, "Scarlett Johansson", "Seattle", "professional gamer");
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+function calculateAge(birthYear){
+	dateObj = new Date();
+	currentYear = dateObj.getFullYear();
+	return "They are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1);
+}
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
