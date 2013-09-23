@@ -66,6 +66,17 @@ currentYear - birthYear - 1;
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 
+var currentAge = 27;
+//>>undefined
+var maxAge = 80;
+//>>undefined
+var amountPerDay = 2;
+//>>undefined
+var restOfLifeTotal = (maxAge - currentAge) * 2;
+//>>undefined
+"You will need " + restOfLifeTotal + " to last you until the ripe old age of " + maxAge;
+//>>"You will need 106 to last you until the ripe old age of 80"
+
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
