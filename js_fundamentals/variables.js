@@ -105,4 +105,17 @@ var area = 3.14 * radius * radius;
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 
-
+var celsius = 17;
+//>>undefined
+var convertToFarenheit = (celsius * 9 / 5) + 32;
+//>>undefined
+convertToFarenheit
+//>>62.6
+celsius + "°C is " + convertToFarenheit + "°F"
+//>>"17°C is 62.6°F"
+var fahrenheit = 62.6;
+//>>undefined
+var convertToCelsius = (fahrenheit - 32) * 5 / 9;
+//>>undefined
+fahrenheit + "°F is " + convertToCelsius + "°C"
+//>>"62.6°F is 17°C"
