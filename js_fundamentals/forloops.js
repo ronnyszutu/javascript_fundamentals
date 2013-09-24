@@ -20,6 +20,11 @@ for (var i = 0; i <= 20; i++){
 
 // Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 
+for (var i = 1; i <= 10; i++){
+	for (var j = 1; j <= 10; j++){
+		console.log(i + " * " + j + " = " + i*j);
+	}
+}
 // EXERCISE: The Grade Assigner
 
 // Check the results of assignGrade function from the conditionals exercise for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
