@@ -96,3 +96,15 @@ calcArea(5);
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+function celsiusToFahrenheit(celsius){
+	var convertToFarenheit = (celsius * 9 / 5) + 32;
+	return celsius + "°C is " + convertToFarenheit + "°F";
+}
+
+function fahrenheitToCelsius(fahrenheit){
+	var convertToCelsius = (fahrenheit - 32) * 5 / 9;
+	return fahrenheit + "°F is " + convertToCelsius + "°C";
+}
+
+celsiusToFahrenheit(20);
+fahrenheitToCelsius(68);
