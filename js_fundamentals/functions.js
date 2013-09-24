@@ -34,6 +34,10 @@ function calculateAge(birthYear){
 	return "They are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1);
 }
 
+calculateAge(1985);
+calculateAge(1960);
+calculateAge(2001);
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
