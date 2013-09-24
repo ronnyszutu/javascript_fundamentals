@@ -71,6 +71,19 @@ calculateSupply(28, 80, 1.8);
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
 
+function calcCirumference(radius){
+	var circumference = 2 * 3.14 * radius;
+	return "The circumference is " + circumference;
+}
+
+function calcArea(radius){
+	var area = 3.14 * radius * radius;
+	return "The area is " + area;
+}
+
+calcCirumference(5);
+calcArea(5);
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
@@ -83,4 +96,3 @@ calculateSupply(28, 80, 1.8);
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
-
