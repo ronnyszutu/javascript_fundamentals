@@ -12,6 +12,18 @@
 // cinnamon
 // cumin
 // cocoa
+var recipe = {
+	title: "Pork and chive dumplings",
+	servings: 2,
+	ingredients: ["pork", "chives", "dumpling wraps"]
+};
+
+console.log(recipe.title);
+console.log("Serves: " + recipe.servings);
+console.log("Ingredients:");
+for (i = 0; i < recipe.ingredients.length; i++){
+	console.log(recipe.ingredients[i]);
+}
 
 // EXERCISE: The Reading List
 
