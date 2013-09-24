@@ -29,6 +29,19 @@ greaterNum(9, 2);
 // takes 1 argument, a language code (e.g. "es", "de", "en")
 // returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
 // Call that function for each of the supported languages and log the result to make sure it works.
+function helloWorld(langCode){
+	if (langCode == "jp"){
+		return "こんにちは、世界中のみなさん.";
+	}else if (langCode == "cn"){
+		return "你好，世界.";
+	}else {
+		return "Hello, World.";
+	}
+}
+
+helloWorld("jp");
+helloWorld("cn");
+helloWorld("lalalalala");
 
 // EXERCISE: The Grade Assigner
 
