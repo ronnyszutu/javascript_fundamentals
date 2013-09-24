@@ -6,6 +6,22 @@
 // takes 2 arguments, both numbers.
 // returns whichever number is the greater (higher) number.
 // Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
+function greaterNum(a, b){
+	if (a == b){
+		return "Both numbers are equal.";
+	}else{
+		greater = "The greater number of " + a + " and " + b + " is ";
+		if (a > b){
+			return greater += (a+".");
+		}else if (b > a){
+			return greater += (b+".");
+		}
+	}
+}
+
+greaterNum(5, 5);
+greaterNum(1, 7);
+greaterNum(9, 2);
 
 // EXERCISE: The World Translator
 
@@ -28,7 +44,3 @@
 // returns the number and pluralized form, like "5 cats" or "1 dog".
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-
-
-
-
