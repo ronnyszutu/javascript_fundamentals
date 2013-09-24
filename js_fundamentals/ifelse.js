@@ -49,6 +49,28 @@ helloWorld("lalalalala");
 // takes 1 argument, a number score.
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
+function assignGrade(numberGrade){
+	if (numberGrade > 90){
+		return "A";
+	}else if (numberGrade > 80){
+		return "B";
+	}else if (numberGrade > 70){
+		return "C";
+	}else if (numberGrade > 60){
+		return "D";
+	}else if (numberGrade > 50){
+		return "E";
+	}else {
+		return "F";
+	}
+}
+
+assignGrade(45);
+assignGrade(55);
+assignGrade(65);
+assignGrade(75);
+assignGrade(85);
+assignGrade(95);
 
 // EXERCISE: The Pluralizer
 
