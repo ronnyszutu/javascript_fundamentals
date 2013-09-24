@@ -69,6 +69,37 @@ for (var j = 0; j < myBooks.length; j++){
 
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
+var myMovies = [
+	{title: "Braveheart",
+	 duration: 177,
+	 stars: ["Mel Gibson", "Sophie Marceau", "Patrick McGoohan"]},
+	{title: "The Lord of the Rings: The Return of the King",
+	 duration: 201,
+	 stars: ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"]},
+	{title: "Armageddon",
+	 duration: 151,
+	 stars: ["Bruce Willis", "Billy Bob Thornton", "Ben Affleck"]},
+	{title: "Inception",
+	 duration: 148,
+	 stars: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]},
+ 	{title: "The Lion King",
+ 	 duration: 89,
+ 	 stars: ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"]} 
+];
 
-
-
+function lookupMovie(movieName){
+	var info = "";
+	for (var i = 0; i < myMovies.length; i++){
+		if (myMovies[i].title == movieName){
+			info += myMovies[i].title + " lasts for " + myMovies[i].duration + " minutes. Stars: ";
+			for (var j = 0; j < myMovies[i].stars.length; j++){
+				info += myMovies[i].stars[j];
+				if (j == myMovies[i].stars.length - 1){
+					break;
+				}
+				info += ", ";
+			}
+		}
+	}
+	return info;
+}
