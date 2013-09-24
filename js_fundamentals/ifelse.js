@@ -79,3 +79,31 @@ assignGrade(95);
 // returns the number and pluralized form, like "5 cats" or "1 dog".
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+function pluralize(noun, number){
+	var str = number + " ";
+	var doesNotChange = new Array("barracks", "deer", "fish", "gallows", "means", "offspring", "series", "sheep", "species");
+
+	if ((number == 1) || (doesNotChange.indexOf(noun) >= 0)){
+		return str + noun;
+	}else {
+		var irregular = new Array("addendum", "addenda", "alga", "algae", "alumnus", "alumni", "amoeba", "amoebae", "antenna", "antennae", "bacterium", "bacteria", "cactus", "cacti", "curriculum", "curricula", "datum", "data", "fungus", "fungi", "genus", "genera", "larva", "larvae", "memorandum", "memoranda", "stimulus", "stimuli", "syllabus", "syllabi", "vertebra", "vertebrae", "echo", "echoes", "embargo", "embargoes", "hero", "heroes", "potato", "potatoes", "tomato", "tomatoes", "torpedo", "torpedoes", "veto", "vetoes", "foot", "feet", "goose", "geese", "louse", "lice", "man", "men", "mouse", "mice", "tooth", "teeth", "woman", "women", "axis", "axes", "analysis", "analyses", "basis", "bases", "crisis", "crises", "diagnosis", "diagnoses", "ellipsis", "ellipses", "emphasis", "emphases", "hypothesis", "hypotheses", "neurosis", "neuroses", "oasis", "oases", "paralysis", "paralyses", "parenthesis", "parentheses", "thesis", "theses", "appendix", "appendices", "index", "indices", "matrix", "matrices");
+		if (irregular.indexOf(noun) >= 0){
+			if (irregular.indexOf(noun) % 2 == 0){
+				return str + irregular[irregular.indexOf(noun) + 1];
+			} else {
+				return str + irregular[irregular.indexOf(noun)];
+			}
+		} else {
+			return str + noun + "s";
+		}
+	}
+}
+
+pluralize("barracks", 1);
+pluralize("barracks", 5);
+pluralize("addendum", 1);
+pluralize("addendum", 5);
+pluralize("addenda", 1);
+pluralize("addenda", 5);
+pluralize("shirt", 1);
+pluralize("shirt", 5);
