@@ -10,6 +10,26 @@
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
 
+var hackGoogle  = {
+	searchButton: function(){
+		console.log(document.getElementById("gbqfsa").innerHTML = "Yahooo!");
+	},
+	pageLogo: function(){
+		console.log(document.getElementById("hplogo").style.backgroundImage = "url(http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f_p_101x50_frontpage.png)");
+		console.log(document.style.background-size = "80px 60px");
+	}
+};
+
+var unhackGoogle = {
+	searchButton: function(){ 
+		console.log(document.getElementById("gbqfsa").innerHTML = "Google Search");
+	},
+	pageLogo: function(){ 
+		console.log(document.getElementById("hplogo").style.backgroundImage = "url(https://www.google.ca/images/srpr/logo4w.png)");
+		console.log(document.style.background-size = "80px 60px");
+	}
+};
+
 // EXERCISE: About Me
 
 // Cuz every webpage needs an "About" section.
