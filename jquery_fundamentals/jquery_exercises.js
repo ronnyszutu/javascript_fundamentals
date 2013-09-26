@@ -5,10 +5,15 @@
 // Change the background color of '#target' by script. 
 // Hint: you can use .css
 
+$(document).ready(function(){
+	$("div#target").css("background", "red");
+});
+
 // EXERCISE: Change Parent
 
 // Change the text in the span, a child of "#target"
 // Hint: you can use .text
+
 
 // EXERCISE: Create Clone
 
