@@ -23,14 +23,18 @@
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
 
-$(document).ready(function(){
-	$("div#target span").clone().insertAfter("div#target span");
-});
+// $(document).ready(function(){
+// 	$("div#target span").clone().insertAfter("div#target span");
+// });
 
 // EXERCISE: Use Filter
 
 // Change background color of the second ".target"
 // Hint: you can use .eq and .css
+
+$(document).ready(function(){
+	$(".target").eq(1).css("background", "green");
+});
 
 // EXERCISE: Disable Buttons
 
