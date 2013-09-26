@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>My Book List</h1>
+  
+</body>
+</html>
+
+<script>
+	var myBooks = [
+	{title: "Ender's Game", 
+	 author: "Orson Scott Card", 
+	 alreadyRead: true,
+	 url: "http://en.wikipedia.org/wiki/File:Ender%27s_game_cover_ISBN_0312932081.jpg"},
+	{title: "A Storm of Swords", 
+	 author: "George R.R. Martin", 
+	 alreadyRead: true,
+	 url: "http://en.wikipedia.org/wiki/File:AStormOfSwords.jpg"},
+	{title: "The Time Traveler's Wife", 
+	 author: "Audrey Niffenegger", 
+	 alreadyRead: true,
+	 url: "http://en.wikipedia.org/wiki/File:TimeTravellersWife.jpg"}, 
+	{title: "The Hitchhiker's Guide to the Galaxy", 
+	 author: "Douglas Adams", 
+	 alreadyRead: false,
+	 url: "http://en.wikipedia.org/wiki/File:H2G2_UK_front_cover.jpg"},
+	{title: "The Zombie Survival Guide", 
+	 author: "Max Brooks", 
+	 alreadyRead: false,
+	 url: "http://en.wikipedia.org/wiki/File:Zombiesurvivalguide.jpg"}
+	];
+
+	for (var i = 0; i < myBooks.length; i++){
+		var newP = document.createElement("p");
+		newP.innerHTML = myBooks[i].title + " by " + myBooks[i].author;
+		document.getElementsByTagName("body")[0].appendChild(newP);
+	}
+
+	// var bookList = document.createElement("ul");
+	// bookList.className = "booklist";
+	// document.getElementsByTagName("body")[0].appendChild(bookList);
+
+	// for (var i = 0; i < myBooks.length; i++){
+	// 	var newUL = document.createElement("ul");
+	// 	newUL.className = "book";
+	// 	document.getElementsByClassName("book")[i].appendChild(newUL);
+
+	// 	//STOPPED HERE
+
+	// 	var bookCover = document.createElement("img");
+	// 	bookCover.src = myBooks[i].url;
+
+
+
+	// 	var newLI = document.createElement("li");
+	// 	newLI.innerHTML = myBooks[i].title + " by " + myBooks[i].author;
+	// 	document.getElementsByTagName("ul")[0].appendChild(newLI);
+	// }
+</script>
