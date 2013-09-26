@@ -14,14 +14,18 @@
 // Change the text in the span, a child of "#target"
 // Hint: you can use .text
 
-$(document).ready(function(){
-	$("div#target span").text("hello world!");
-});
+// $(document).ready(function(){
+// 	$("div#target span").text("hello world!");
+// });
 
 // EXERCISE: Create Clone
 
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
+
+$(document).ready(function(){
+	$("div#target span").clone().insertAfter("div#target span");
+});
 
 // EXERCISE: Use Filter
 
