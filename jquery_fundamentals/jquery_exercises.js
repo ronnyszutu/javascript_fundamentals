@@ -77,21 +77,21 @@
 // Make "#target" double size
 // Hint: you can use .css, .width and .height
 
-$(document).ready(function(){
-	var w = $('div#target').width() * 2;
-	var h = $('div#target').height() * 2;
-	$('div#target').css('width', w);
-	$('div#target').css('height', h);
-});
+// $(document).ready(function(){
+// 	var w = $('div#target').width() * 2;
+// 	var h = $('div#target').height() * 2;
+// 	$('div#target').css('width', w);
+// 	$('div#target').css('height', h);
+// });
 
 // EXERCISE: Empty Elements
 // Hint: you can use .empty
 
 // Remove all children and text of "#target"
 
-// $(document).ready(function(){
-
-// });
+$(document).ready(function(){
+	$('div#target').empty();
+});
 
 // EXERCISE: Delay
 
