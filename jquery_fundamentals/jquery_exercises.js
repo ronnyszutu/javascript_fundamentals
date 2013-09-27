@@ -116,24 +116,25 @@
 // Make "#target" double size with animation
 // Hint: you can use .animate, .width, and .height
 
-$(document).ready(function(){
-	var w = $('#target').width() * 2;
-	var h = $('#target').height() * 2;
-	$('#target').animate({
-		height: h,
-		width: w
-	}, 5000, "linear"
-	);
-});
+// $(document).ready(function(){
+// 	var w = $('#target').width() * 2;
+// 	var h = $('#target').height() * 2;
+// 	$('#target').animate({
+// 		height: h,
+// 		width: w
+// 	}, 5000, "linear"
+// 	);
+// });
 
 // EXERCISE: Alternate Color
 
 // Make the list-box alternating. (Make odd options a different color)
 // Hint: you can select the option and use .filter and .css
 
-// $(document).ready(function(){
-
-// });
+$(document).ready(function(){
+	var options = $('#target').children().children();
+	options.filter(":odd").css('background', 'green');
+});
 
 // EXERCISE: All But One
 
