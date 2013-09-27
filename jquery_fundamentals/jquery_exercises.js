@@ -68,14 +68,21 @@
 // Select the second option in the selectbox by script
 // Hint: you will have to select the option and can use .eq and .attr
 
-$(document).ready(function(){
-	$('option').eq(1).attr('selected', true)
-});
+// $(document).ready(function(){
+// 	$('option').eq(1).attr('selected', true)
+// });
 
 // EXERCISE: Change Size
 
 // Make "#target" double size
 // Hint: you can use .css, .width and .height
+
+$(document).ready(function(){
+	var w = $('div#target').width() * 2;
+	var h = $('div#target').height() * 2;
+	$('div#target').css('width', w);
+	$('div#target').css('height', h);
+});
 
 // EXERCISE: Empty Elements
 // Hint: you can use .empty
