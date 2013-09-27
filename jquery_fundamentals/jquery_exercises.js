@@ -50,19 +50,27 @@
 // Uncheck all checkboxes using jQuery
 // Hint: you will have to select the input and can use .removeAttr
 
-$(document).ready(function(){
-	$('input[type=checkbox]').removeAttr('checked')
-});
+// $(document).ready(function(){
+// 	$('input[type=checkbox]').removeAttr('checked')
+// });
 
 // EXERCISE: Change Parent
 
 // Move "#child" from "#parent1" to "#parent2"
 // Hint: you can use .appendTo
 
+$(document).ready(function(){
+	$('div#child').appendTo('div#parent2')
+});
+
 // EXERCISE: Select A Option in A Select Box
 
 // Select the second option in the selectbox by script
 // Hint: you will have to select the option and can use .eq and .attr
+
+// $(document).ready(function(){
+
+// });
 
 // EXERCISE: Change Size
 
@@ -74,34 +82,60 @@ $(document).ready(function(){
 
 // Remove all children and text of "#target"
 
+// $(document).ready(function(){
+
+// });
+
 // EXERCISE: Delay
 
 // Show Alert with 1 second delay (Use "setTimeout")
 // Hint: you can use .setTimeout and alert
+
+// $(document).ready(function(){
+
+// });
 
 // EXERCISE: Count
 
 // Show the number of children in an alert
 // Hint: you can use .children, .length and alert or you could use .find, .size and alert. the alert should show 5
 
+// $(document).ready(function(){
+
+// });
+
 // EXERCISE: Animate
 
 // Make "#target" double size with animation
 // Hint: you can use .animate, .width, and .height
+
+// $(document).ready(function(){
+
+// });
 
 // EXERCISE: Alternate Color
 
 // Make the list-box alternating. (Make odd options a different color)
 // Hint: you can select the option and use .filter and .css
 
+// $(document).ready(function(){
+
+// });
+
 // EXERCISE: All But One
 
 // Remove all children of "#target" but h2
 // Hint: you can use .children, .not and .remove
+
+// $(document).ready(function(){
+
+// });
 
 // EXERCISE: Without Children
 
 // Remove all 'div' whitch has no child elements.
 // Hint: you can use .not and .remove. Look closely at what options you can pass .not
 
+// $(document).ready(function(){
 
+// });
