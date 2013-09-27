@@ -107,18 +107,24 @@
 // Show the number of children in an alert
 // Hint: you can use .children, .length and alert or you could use .find, .size and alert. the alert should show 5
 
-$(document).ready(function(){
-	alert($('#target').children('div').length);
-});
+// $(document).ready(function(){
+// 	alert($('#target').children('div').length);
+// });
 
 // EXERCISE: Animate
 
 // Make "#target" double size with animation
 // Hint: you can use .animate, .width, and .height
 
-// $(document).ready(function(){
-
-// });
+$(document).ready(function(){
+	var w = $('#target').width() * 2;
+	var h = $('#target').height() * 2;
+	$('#target').animate({
+		height: h,
+		width: w
+	}, 5000, "linear"
+	);
+});
 
 // EXERCISE: Alternate Color
 
