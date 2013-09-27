@@ -131,19 +131,19 @@
 // Make the list-box alternating. (Make odd options a different color)
 // Hint: you can select the option and use .filter and .css
 
-$(document).ready(function(){
-	var options = $('#target').children().children();
-	options.filter(":odd").css('background', 'green');
-});
+// $(document).ready(function(){
+// 	var options = $('#target').children().children();
+// 	options.filter(":odd").css('background', 'green');
+// });
 
 // EXERCISE: All But One
 
 // Remove all children of "#target" but h2
 // Hint: you can use .children, .not and .remove
 
-// $(document).ready(function(){
-
-// });
+$(document).ready(function(){
+	$('#target').children().not('h2').remove();
+});
 
 // EXERCISE: Without Children
 
